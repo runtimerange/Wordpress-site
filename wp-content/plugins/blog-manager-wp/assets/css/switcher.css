@@ -1,0 +1,133 @@
+.switch {
+ position: relative;
+ height: 33px;
+  width: 102px;
+  background: ###;
+  border:0px solid #f2f2f2;
+  border-radius: 10px;
+  
+ -webkit-box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+  margin-top:0px;
+	
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 50px;
+  line-height: 31px;
+  font-size: 16px;
+  color:#000;
+  text-align: center;
+  font-weight:bold;
+  cursor: pointer;
+  font-family: "Dosis", sans-serif;
+}
+
+.switch-label:active {
+  font-weight: bold;
+}
+
+.switch-label-off {
+  padding-left: 0px;
+}
+
+.switch-label-on {
+  padding-right: 0px;
+}
+
+.switch-input {
+  display: none !important;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: #ffffff !important;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  -webkit-transition: 0.05s ease-out;
+  -moz-transition: 0.05s ease-out;
+  -o-transition: 0.05s ease-out;
+  transition: 0.05s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 50px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 54px;
+  height: 33px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius:0;
+  background:#673bb6;
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+  
+}
+
+.wp-admin .pbsm-form-class .pbsm-typography-wrapper input[type="number"] {   
+    height: 43px;
+}
+
+.switch-selection-big
+{
+	width:80px !important;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection-big
+{
+	left:80px !important;
+}
+.switch-big
+{
+	width:160px;
+}
+.switch-label-big
+{
+	width:80px !important;
+}
+
+.switch-toggle {
+   float: left;
+   background: #ffffff;
+   -webkit-box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.5);
+	margin-right:10px;
+  border-radius: 10px;
+}
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+.switch-toggle input + label {
+  padding: 10px;
+  float:left;
+  color: #000000;
+  border-radius: 10px;
+  font-weight:bold;
+  cursor: pointer;
+}
+.switch-toggle input:checked + label {
+ background:#673bb6;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color:#fff;
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EA5B53', endColorstr='#E74B42', GradientType=0) !important;
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}

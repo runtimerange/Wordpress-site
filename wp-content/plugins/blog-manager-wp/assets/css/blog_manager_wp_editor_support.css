@@ -1,0 +1,7 @@
+#addElementModal .element-item[data-element-type="pbsm_blog_managerWP"] i {
+	background-image: url('../assets/images/pbsm-vc.png');
+	background-size: 24px 24px;
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+}
